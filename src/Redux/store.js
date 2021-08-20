@@ -1,5 +1,3 @@
-
-
 const ADD = 'ADD';
 
 // Action creator:
@@ -24,3 +22,4 @@ const toDosReducer = (state = [], action) => {
 
 const store = Redux.createStore(toDosReducer);
 
+export default store;
