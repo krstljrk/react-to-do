@@ -26,10 +26,24 @@ class Todos extends React.Component {
     }
 
     render() {
+        // temporary
+        const renderTodos = this.state.toDos.map(todo => 
+            <li key={todo}>{todo}</li>
+        );
+
         return (
             <div className="addTodos">
-                <input type="text" className="todo-input" value={this.state.input} onChange={this.handleChange}/>
+                <input 
+                    type="text" 
+                    className="todo-input" 
+                    value={this.state.input} 
+                    onChange={this.handleChange}
+                />
                 <button className="add-btn" onClick={this.submitTodo}>Add</button>
+
+                <ul>
+                    {renderTodos}
+                </ul>
             </div>
         )
     }
