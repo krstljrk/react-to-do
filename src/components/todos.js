@@ -1,4 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
+import {addTodos} from '../redux/actions';
+
+
+
+const mapStateToProps = (state) => {
+    return {
+        toDos: state
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        submitNewToDo: (newToDo) => {
+            dispatch(addTodos(newToDo));
+        }
+    }
+}
 
 class Todos extends React.Component {
     constructor(props) {
@@ -50,4 +68,7 @@ class Todos extends React.Component {
 
 };
 
-export default Todos;
+// export default Todos;
+// Connecting the store to this component:
+
+export default connect(mapStateToProps, mapDispatchToProps)(Todos)
