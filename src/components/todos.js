@@ -22,8 +22,7 @@ class Todos extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            input: '',
-            toDos: []
+            input: ''
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -37,17 +36,13 @@ class Todos extends React.Component {
     }
 
     submitTodo() {
+        this.props.submitNewToDo(this.state.input)
         this.setState({
-            input: '',
-            toDos: [...this.state.toDos, this.state.input]
+            input: ''
         })
     }
 
     render() {
-        // temporary
-        const renderTodos = this.state.toDos.map(todo => 
-            <li key={todo}>{todo}</li>
-        );
 
         return (
             <div className="addTodos">
@@ -60,7 +55,7 @@ class Todos extends React.Component {
                 <button className="add-btn" onClick={this.submitTodo}>Add</button>
 
                 <ul>
-                    {renderTodos}
+                
                 </ul>
             </div>
         )
