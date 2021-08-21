@@ -1,4 +1,3 @@
-
 const ADD = 'ADD';
 
 // Action creator:

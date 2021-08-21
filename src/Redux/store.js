@@ -1,8 +1,7 @@
-import { configureStore } from "@reduxjs/toolkit";
-import toDoReducer from './toDoSlice';
+import { createStore } from 'redux';
+import toDosReducer from './reducers';
 
-export default configureStore({
-    reducer : {
-        todos: toDoReducer
-    }
-});
+
+const store = createStore(toDosReducer);
+
+export default store;

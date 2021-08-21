@@ -44,7 +44,11 @@ class Todos extends React.Component {
 
     render() {
         const renderTodos = this.props.toDos.map(item =>
-            <li key={item}>{item}</li>
+            <div>
+                <li key={item}>{item}</li>
+                <button>Complete</button>
+            </div>
+
         );
 
         return (
@@ -65,7 +69,7 @@ class Todos extends React.Component {
                             {renderTodos}
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
         )
