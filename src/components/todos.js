@@ -44,8 +44,9 @@ class Todos extends React.Component {
 
     render() {
         const renderTodos = this.props.toDos.map(item =>
-            <div>
+            <div className="item">
                 <li key={item}>{item}</li>
+                <br />
                 <button>Complete</button>
             </div>
 
@@ -53,10 +54,11 @@ class Todos extends React.Component {
 
         return (
             <div className="app">
-                <div>
+                <div className="inputSection">
+                    <h2>Enter new task:</h2>
                     <input
                         type="text"
-                        className="todo-input"
+                        className="todoInput"
                         value={this.state.input}
                         onChange={this.handleChange}
                     />
