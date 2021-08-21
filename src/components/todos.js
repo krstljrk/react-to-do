@@ -48,6 +48,7 @@ class Todos extends React.Component {
                 <li key={item}>{item}</li>
                 <br />
                 <button>Complete</button>
+                <button>Delete</button>
             </div>
 
         );
