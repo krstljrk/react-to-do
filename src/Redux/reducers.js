@@ -5,7 +5,7 @@ const toDosReducer = (state = [], action) => {
         case ADD:
             return [
                 ...state,
-                action.newToDo
+                action.newTodo
             ];
         default:
             return state;

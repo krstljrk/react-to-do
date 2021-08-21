@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {addTodos} from '../redux/actions';
+import { addTodos } from '../redux/actions';
 
 
 
@@ -43,20 +43,30 @@ class Todos extends React.Component {
     }
 
     render() {
+        const renderTodos = this.props.toDos.map(item =>
+            <li key={item}>{item}</li>
+        );
 
         return (
-            <div className="addTodos">
-                <input 
-                    type="text" 
-                    className="todo-input" 
-                    value={this.state.input} 
-                    onChange={this.handleChange}
-                />
-                <button className="add-btn" onClick={this.submitTodo}>Add</button>
+            <div className="app">
+                <div>
+                    <input
+                        type="text"
+                        className="todo-input"
+                        value={this.state.input}
+                        onChange={this.handleChange}
+                    />
+                    <button className="add-btn" onClick={this.submitTodo}>Add</button>
+                </div>
 
-                <ul>
-                
-                </ul>
+                <div className="toDoGrid">
+                    <div className="toDoStyle">
+                        <ul>
+                            {renderTodos}
+                        </ul>
+                    </div>
+                    
+                </div>
             </div>
         )
     }
