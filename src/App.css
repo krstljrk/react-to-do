@@ -1,4 +1,4 @@
-.app {
+.App {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,10 +9,7 @@
   margin: auto;
 }
 
-.todoInput {
-}
-
-.item {
+.todo-item {
   position: relative;
   display: inline-block;
   align-items: center;
