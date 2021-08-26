@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { connect } from 'react-redux';
 import { addTodos } from '../redux/actions';
 
@@ -83,4 +83,4 @@ class Todos extends React.Component {
 // export default Todos;
 // Connecting the store to this component:
 
-export default connect(mapStateToProps, mapDispatchToProps)(Todos)
+export default connect(mapStateToProps, mapDispatchToProps)(Todos)*/
