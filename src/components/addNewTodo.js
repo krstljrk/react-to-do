@@ -11,6 +11,16 @@ function AddNewTodo() {
         setInput(event.target.value);
     }
 
+    const addTodo = () => {
+        console.log(`Adding ${input} to state`);
+
+        dispatch(add({
+            id: Date.now(),
+            todo: input,
+            completed: false
+        }))
+    }
+
     return (
         <div className="inputSection">
             <h2>Enter new task:</h2>
@@ -20,15 +30,7 @@ function AddNewTodo() {
                 value={input}
                 onChange={handleChange}
             />
-            <button className="add-btn" onClick={() =>
-                dispatch(add(
-                    {
-                        id: input,
-                        todo: input,
-                        completed: false
-                    }
-                ))
-            }>Add</button>
+            <button className="add-btn" onClick={addTodo}>Add</button>
         </div>
     );
 }
