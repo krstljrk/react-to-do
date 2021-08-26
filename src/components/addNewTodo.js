@@ -21,13 +21,13 @@ function AddNewTodo() {
                 onChange={handleChange}
             />
             <button className="add-btn" onClick={() =>
-                dispatch(add([
+                dispatch(add(
                     {
                         id: input,
                         todo: input,
                         completed: false
                     }
-                ]))
+                ))
             }>Add</button>
         </div>
     );
