@@ -1,4 +1,4 @@
-.App {
+.app {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   margin: auto;
 }
 
-.todo-item {
+.todoItem {
   position: relative;
   display: inline-block;
   align-items: center;
@@ -21,4 +21,8 @@
   margin-left: 10%;
   list-style-type: none;
   max-width: fit-content;
+}
+
+.todoItem--done {
+  text-decoration: slategrey;
 }

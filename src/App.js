@@ -17,10 +17,10 @@ const dummyData = [
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <div>
-        <AddNewTodo className="app-container"/>
-        <div className="todo-container">
+        <AddNewTodo className="app__container"/>
+        <div className="todo__container">
           {
             dummyData.map(item => {
               <DisplayTodos 

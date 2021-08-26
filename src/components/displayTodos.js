@@ -3,13 +3,10 @@ import { useSelector } from 'react-redux';
 
 
 function DisplayTodos({ id, content, completed }) {
-    const todo = useSelector((state) => state.todo.value);
-
-
 
     return (
-        <div className="todo-item">
-
+        <div className="todoItem">
+            <p className={completed && 'todoItem--done'}>{content}</p>
         </div>
     );
 }
