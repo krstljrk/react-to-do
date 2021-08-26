@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { add } from '../redux/todosSlice';
+import { add } from '../features/todoSlice';
 
 function AddNewTodo() {
-    const [input, setInput] = useState('');
+    const [input, setInput] = useState(null);
 
     const dispatch = useDispatch();
 

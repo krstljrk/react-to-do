@@ -4,6 +4,8 @@ import { useSelector } from 'react-redux';
 function DisplayTodos() {
     const todo = useSelector((state) => state.todo.value);
 
+    console.log(todo);
+
     const renderTodos = () => {
         todo.map(todo =>
             <div className="item">

@@ -1,5 +1,4 @@
 import './App.css';
-import Todos from './components/todos';
 import AddNewTodo from './components/addNewTodo';
 import DisplayTodos from './components/displayTodos';
 

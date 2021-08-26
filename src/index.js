@@ -4,7 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
-import todoReducer from './redux/todosSlice';
+import todoReducer from './redux/todoSlice';
 
 const store = configureStore({
   reducer: {
