@@ -1,8 +1,9 @@
 /*import React from 'react';
 import { useSelector } from 'react-redux';
+import { currentState } from '../features/todoSlice';
 
 function DisplayTodos(props) {
-    //const todoItem = useSelector((state) => state.todos.value);
+    const todoItem = useSelector(currentState);
 
     const dummyData = [
         {
@@ -28,7 +29,7 @@ function DisplayTodos(props) {
     }*/
     /* THIS IS WHERE THE ISSUE LIES!!!! can't even map dummy data 
     const renderDummyData = (please) => {
-        dummyData.map((item) =>
+        todoItem.map((item) =>
             <div className="todoItem">{item.todo}</div> 
         )
 }
@@ -36,26 +37,9 @@ function DisplayTodos(props) {
 
 return (
     <div>
-        {/*
-            <div className="todoItem">
-                <div>
-                    
-                    {dummyData[0].todo}
-                </div>
-            </div>
-            <div className="todoItem">
-                <div>
-                    
-                    {dummyData[1].todo}
-                </div>
-            </div>
-            <ul>
-                {renderTodos}
-            </ul>
-            }
-        {renderDummyData("In the render method")}
+        {renderDummyData}
     </div>
 );
 }
 
-export default DisplayTodos;*/
+export default DisplayTodos; */

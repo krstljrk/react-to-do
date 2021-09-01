@@ -1,10 +1,12 @@
 import React from 'react'
 
 
-function ToDoItem({ content, completed, id}) {
+function ToDoItem({ todo, completed, id}) {
+    
+
     return (
         <div className="todoItem">
-            <p>{content}</p>
+            {todo}
         </div>
     )
 }
