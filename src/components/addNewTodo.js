@@ -7,6 +7,8 @@ import { uuid } from 'uuidv4';
 function AddNewTodo() {
     const [input, setInput] = useState("");
 
+    const [empty, setEmpty] = useState(false);
+
     const dispatch = useDispatch();
 
     const handleChange = (event) => {
@@ -16,12 +18,20 @@ function AddNewTodo() {
     const addTodo = () => {
         console.log(`Adding ${input} to state`);
 
-        dispatch(add({
-            id: uuid(),
-            todo: input,
-            completed: false
-        }));
-        
+        if (input) {
+            dispatch(add({
+                id: uuid(),
+                todo: input,
+                completed: false
+            }));
+        } else {
+            setEmpty(true);
+        }
+
+        setTimeout(() => {
+            setEmpty(false);
+        }, 8000);
+
         // Clear input field once button is clicked and action dispatched
         setInput("");
     }
@@ -31,16 +41,18 @@ function AddNewTodo() {
             <h2>Enter new task:</h2>
             <div className="inputElem">
                 <input
-                type="text"
-                className="todoInput"
-                value={input}
-                onChange={handleChange}
-            />
+                    type="text"
+                    className="todoInput"
+                    value={input}
+                    onChange={handleChange}
+                />
             </div>
             <div className="inputElem">
-                <button className="add-btn" onClick={addTodo}>Add</button>
+                {empty && <p>Please enter text to add a new task.</p>}
+                <button className="add-btn" onClick={addTodo}>ADD</button>
+
             </div>
-            
+
         </div>
     );
 }
