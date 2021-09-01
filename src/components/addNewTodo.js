@@ -28,13 +28,18 @@ function AddNewTodo() {
     return (
         <div className="inputSection">
             <h2>Enter new task:</h2>
-            <input
+            <div className="inputElem">
+                <input
                 type="text"
                 className="todoInput"
                 value={input}
                 onChange={handleChange}
             />
-            <button className="add-btn" onClick={addTodo}>Add</button>
+            </div>
+            <div className="inputElem">
+                <button className="add-btn" onClick={addTodo}>Add</button>
+            </div>
+            
         </div>
     );
 }

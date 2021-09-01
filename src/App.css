@@ -6,6 +6,8 @@
 }
 
 .inputSection {
+  position: relative;
+  display: inline-table;
   margin: auto;
 }
 
@@ -31,6 +33,16 @@
   padding: 20px 0 20px 0;
 }
 
+
 .todoInput {
   width: 30em;
+}
+
+.inputElem {
+  padding: 0 0 10px 0;
+}
+
+.add-btn {
+  width: 8em;
+  height: 3em;
 }
