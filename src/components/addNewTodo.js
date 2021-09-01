@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../css/addTodo.css'
 import { useDispatch } from 'react-redux';
 import { add } from '../features/todoSlice';
 import { uuid } from 'uuidv4';

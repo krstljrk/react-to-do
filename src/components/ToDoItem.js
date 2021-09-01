@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/toDoItem.css'
 
 
 function ToDoItem({ todo, completed, id}) {
