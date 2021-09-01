@@ -1,14 +1,28 @@
 .todoItem {
   background-color: #A66784;
-    position: relative;
-    display: inline-block;
-    border: 2px solid black;
-    padding: 20px 80px 20px 20px;
-    margin: 50px 20px 50px 10%;
-    list-style-type: none; 
-    max-width: fit-content;
-  }
-  
+  position: relative;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 20px 80px 20px 20px;
+  margin: 50px 20px 50px 10%;
+  list-style-type: none; 
+  max-width: fit-content;
+}
+
+.todoItem p {
+  font-size: larger;
+}
+
 .todoItem--done {
-    text-decoration: line-through;
-  }
+  text-decoration: line-through;
+}
+
+.todoItem__btns {
+  position: relative;
+}
+
+.todoItem__btns button {
+  position: relative;
+  float: right;
+  margin: 0 5px 0 0;
+}

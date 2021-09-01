@@ -7,7 +7,13 @@ function ToDoItem({ todo, completed, id}) {
 
     return (
         <div className="todoItem">
-            {todo}
+            <p>{todo}</p>
+            <div className="todoItem__btns">
+                <button>EDIT</button>
+                <button>DONE</button>
+                <button>DELETE</button>
+            </div>
+            
         </div>
     )
 }
