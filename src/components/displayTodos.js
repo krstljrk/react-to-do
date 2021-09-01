@@ -24,11 +24,20 @@ function DisplayTodos() {
     */
 
     return (
-        <div className="todoItem">
-            <div>
-                {/*renderTodos*/}
-                {dummyData[0].todo}
+        <div>
+            <div className="todoItem">
+                <div>
+                    {/*renderTodos*/}
+                    {dummyData[0].todo}
+                </div>
             </div>
+            <div className="todoItem">
+                <div>
+                    {/*renderTodos*/}
+                    {dummyData[1].todo}
+                </div>
+            </div>
+
         </div>
     );
 }
