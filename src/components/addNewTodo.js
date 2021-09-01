@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { add } from '../features/todoSlice';
 
 function AddNewTodo() {
-    const [input, setInput] = useState(null);
+    const [input, setInput] = useState("");
 
     const dispatch = useDispatch();
 
@@ -15,7 +15,7 @@ function AddNewTodo() {
         console.log(`Adding ${input} to state`);
 
         dispatch(add({
-            id: Date.now(),
+            id: 0,
             todo: input,
             completed: false
         }))
@@ -30,7 +30,16 @@ function AddNewTodo() {
                 value={input}
                 onChange={handleChange}
             />
-            <button className="add-btn" onClick={addTodo}>Add</button>
+            <button className="add-btn" onClick={() => {
+                console.log(`Adding ${input} to state`);
+
+                dispatch(add({
+                    id: 0,
+                    todo: input,
+                    completed: false
+                }))
+            }
+            }>Add</button>
         </div>
     );
 }
