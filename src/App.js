@@ -21,7 +21,10 @@ function App() {
   return (
     <div className="app">
       <div>
-        <AddNewTodo className="app__container"/>
+        <div className="add__container">
+          <AddNewTodo />
+        </div>
+        
         <div className="todo__container">
           <DisplayTodos />
           {/*
