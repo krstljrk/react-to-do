@@ -1,8 +1,14 @@
 .app {
   border: 2px solid black;
+  border-radius: 5%;
+  background-color: #A67567;
   margin: 5em auto 0 auto;
   max-width: 70vw;
   min-height: 80vh;
+}
+
+body {
+  background-color: #7167A6;
 }
 
 

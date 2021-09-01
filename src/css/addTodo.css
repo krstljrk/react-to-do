@@ -5,7 +5,7 @@
     margin: 20px 10% 50px 10%;
     padding: 20px 0 20px 0;
   }
-
+ 
   .inputSection {
     position: relative;
     display: inline-table;
@@ -13,7 +13,10 @@
   }
 
   .todoInput {
-    max-width: 30em;
+    text-align: center;
+    min-width: 30em;
+    padding: 5px 0 5px 0;
+    border-radius: 0%;
   }
   
   .inputElem {
@@ -21,6 +24,7 @@
   }
   
   .add-btn {
-    max-width: 8em;
+    min-width: 8em;
     height: 3em;
+    border-radius: 15%;
   }
