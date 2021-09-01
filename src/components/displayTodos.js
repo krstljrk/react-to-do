@@ -1,8 +1,9 @@
-import React from 'react';
+/*import React from 'react';
 import { useSelector } from 'react-redux';
-import { connect } from "react-redux";
 
-function DisplayTodos() {
+function DisplayTodos(props) {
+    //const todoItem = useSelector((state) => state.todos.value);
+
     const dummyData = [
         {
             id: 1,
@@ -15,31 +16,46 @@ function DisplayTodos() {
             completed: true
         },
     ]
+
     /*
     const renderTodos = () => {
-        props.todos.map(item => {
-            <li>{item.content}</li>
-        })
-    }
-    */
+        todoItem.map(item => {
+            <li className="todoItem">
+                {item.content}
+            </li>
 
-    return (
-        <div>
+        })
+    }*/
+    /* THIS IS WHERE THE ISSUE LIES!!!! can't even map dummy data 
+    const renderDummyData = (please) => {
+        dummyData.map((item) =>
+            <div className="todoItem">{item.todo}</div> 
+        )
+}
+
+
+return (
+    <div>
+        {/*
             <div className="todoItem">
                 <div>
-                    {/*renderTodos*/}
+                    
                     {dummyData[0].todo}
                 </div>
             </div>
             <div className="todoItem">
                 <div>
-                    {/*renderTodos*/}
+                    
                     {dummyData[1].todo}
                 </div>
             </div>
-
-        </div>
-    );
+            <ul>
+                {renderTodos}
+            </ul>
+            }
+        {renderDummyData("In the render method")}
+    </div>
+);
 }
 
-export default DisplayTodos;
+export default DisplayTodos;*/

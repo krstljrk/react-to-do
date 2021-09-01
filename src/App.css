@@ -22,7 +22,7 @@
 }
 
 .todoItem--done {
-  text-decoration: slategrey;
+  text-decoration: line-through;
 }
 
 .add__container {
@@ -35,7 +35,7 @@
 
 
 .todoInput {
-  width: 30em;
+  max-width: 30em;
 }
 
 .inputElem {
@@ -43,6 +43,6 @@
 }
 
 .add-btn {
-  width: 8em;
+  max-width: 8em;
   height: 3em;
 }
