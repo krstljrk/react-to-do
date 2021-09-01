@@ -2,6 +2,7 @@ import './App.css';
 import AddNewTodo from './components/addNewTodo';
 import DisplayTodos from './components/displayTodos';
 
+/*
 const dummyData = [
   {
       id: 1,
@@ -14,6 +15,7 @@ const dummyData = [
       completed: true
   },
 ]
+*/
 
 function App() {
   return (
@@ -21,15 +23,16 @@ function App() {
       <div>
         <AddNewTodo className="app__container"/>
         <div className="todo__container">
-          {
-            dummyData.map(item => {
-              <DisplayTodos 
+          <DisplayTodos />
+          {/*
+            dummyData.map(item => 
+              <DisplayTodos
               id={item.id}
               content={item.todo}
               completed={item.completed}
               />
-            })
-          }
+            )
+            */}
         </div>
       </div>
       

@@ -1,12 +1,34 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { connect } from "react-redux";
 
-
-function DisplayTodos({ id, content, completed }) {
+function DisplayTodos() {
+    const dummyData = [
+        {
+            id: 1,
+            todo: "Todo activity one",
+            completed: false
+        },
+        {
+            id: 2,
+            todo: "Todo activity two",
+            completed: true
+        },
+    ]
+    /*
+    const renderTodos = () => {
+        props.todos.map(item => {
+            <li>{item.content}</li>
+        })
+    }
+    */
 
     return (
         <div className="todoItem">
-            <p className={completed && 'todoItem--done'}>{content}</p>
+            <div>
+                {/*renderTodos*/}
+                {dummyData[0].todo}
+            </div>
         </div>
     );
 }
