@@ -8,11 +8,7 @@ export const deleteSlice = createSlice({
     initialState,
     reducers: {
         deleteAction: (state, action) => {
-            console.log("In delete reducer")
-            return currentState.todoList.filter((item) => item.id !== action.payload)
-            // need action for id
-            /* 
-            state.todoList.map(obj => {
+            state.todoList.map((obj) => {
                
                 if (action.payload.id == obj.id) {
                     let index = state.todoList.findIndex(obj);
@@ -23,10 +19,10 @@ export const deleteSlice = createSlice({
                 } else {
                     console.log("No such object");
                 }
-                */
+                
             }
-            //state.todoList.
-        },
+        }
+                 
     }
 );
 
