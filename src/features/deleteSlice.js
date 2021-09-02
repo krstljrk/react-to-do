@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 import { currentState } from "./todoSlice";
 
 const initialState = currentState;
@@ -8,9 +8,12 @@ export const deleteSlice = createSlice({
     initialState,
     reducers: {
         deleteAction: (state, action) => {
+            console.log("In delete reducer")
+            return currentState.todoList.filter((item) => item.id !== action.payload)
             // need action for id
-            
+            /* 
             state.todoList.map(obj => {
+               
                 if (action.payload.id == obj.id) {
                     let index = state.todoList.findIndex(obj);
                     // Placeholder method:
@@ -20,11 +23,12 @@ export const deleteSlice = createSlice({
                 } else {
                     console.log("No such object");
                 }
-            })
+                */
+            }
             //state.todoList.
         },
     }
-});
+);
 
 export const { deleteAction } = deleteSlice.actions;
 

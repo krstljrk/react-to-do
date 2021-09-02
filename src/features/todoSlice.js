@@ -11,7 +11,7 @@ export const todoSlice = createSlice({
         add: (state, action) => {
             state.todoList.push(action.payload);
             //state.value.push(action.payload);
-        }
+        },
     }
 });
 

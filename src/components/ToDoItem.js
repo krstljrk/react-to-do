@@ -4,12 +4,12 @@ import { useDispatch } from 'react-redux';
 import { deleteAction } from '../features/deleteSlice';
 
 
-function ToDoItem({ todo, completed, id}) {
+function ToDoItem({ todo, completed, id }) {
     const dispatch = useDispatch();
-    
-    const deleteTodo = () => {
+
+    const deleteItem = () => {
         dispatch(deleteAction(id));
-    }
+    } 
 
     return (
         <div className="todoItem">
@@ -18,11 +18,11 @@ function ToDoItem({ todo, completed, id}) {
                 <button>EDIT</button>
                 <button>DONE</button>
                 <button
-                className="delete-btn"
-                onClick={deleteTodo}
-                type="submit">DELETE</button>
+                    className="delete-btn"
+                    onClick={deleteItem}
+                    type="submit">DELETE</button>
             </div>
-            
+
         </div>
     )
 }
