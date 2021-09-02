@@ -24,7 +24,7 @@ export const deleteSlice = createSlice({
         }
                  
     }
-);
+});
 
 export const { deleteAction } = deleteSlice.actions;
 
