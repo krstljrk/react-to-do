@@ -7,6 +7,7 @@ export const deleteSlice = createSlice({
     name: "delete",
     initialState,
     reducers: {
+        /*
         deleteAction: (state, action) => {
             state.todoList.map((obj) => {
                
@@ -21,7 +22,7 @@ export const deleteSlice = createSlice({
                 }
                 
             }
-        }
+        },*/
                  
     }
 });
