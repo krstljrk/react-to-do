@@ -19,11 +19,7 @@ function AddNewTodo() {
         console.log(`Adding ${input} to state`);
 
         if (input) {
-            dispatch(add({
-                id: uuid(),
-                todo: input,
-                completed: false
-            }));
+            dispatch(add(input));
         } else {
             setEmpty(true);
         }

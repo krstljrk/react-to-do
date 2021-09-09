@@ -6,10 +6,17 @@ const initialState = {
 
 export const todoSlice = createSlice({
     name: "todos",
-    initialState,
+    initialState: [
+        {id: 0, todo: "First Todo", completed: false}
+    ],
     reducers: {
         add: (state, action) => {
-            state.todoList.push(action.payload);
+            const newTodo = {
+                id: Date.now(),
+                todo: action.payload,
+                completed: false
+            }
+            state.push(newTodo);
             //state.value.push(action.payload);
         },
     }
