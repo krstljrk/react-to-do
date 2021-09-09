@@ -9,8 +9,7 @@ import deleteReducer from './features/todoSlice';
 
 const store = configureStore({
   reducer: {
-    todos: todoReducer,
-    delete: deleteReducer
+    todos: todoReducer
   }
 })
 

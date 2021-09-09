@@ -25,6 +25,5 @@ export const todoSlice = createSlice({
 export const { add } = todoSlice.actions;
 
 // EXPORT CURRENT STATE:
-export const currentState = state => state.todos.todoList
 
 export default todoSlice.reducer;

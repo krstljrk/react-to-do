@@ -1,7 +1,7 @@
-import { createSlice, current } from "@reduxjs/toolkit";
+/*import { createSlice, current } from "@reduxjs/toolkit";
 import { currentState } from "./todoSlice";
 
-const initialState = currentState;
+
 
 export const deleteSlice = createSlice({
     name: "delete",
@@ -22,11 +22,11 @@ export const deleteSlice = createSlice({
                 }
                 
             }
-        },*/
+        },
                  
     }
 });
 
 export const { deleteAction } = deleteSlice.actions;
 
-export default deleteSlice.reducer;
+export default deleteSlice.reducer;*/

@@ -6,7 +6,7 @@ import { currentState } from './features/todoSlice';
 
 
 function App() {
-  const todos = useSelector(currentState);
+  const todos = useSelector((state) => state.todos);
 
   return (
     <div className="app">
