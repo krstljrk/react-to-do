@@ -9,7 +9,7 @@ function ToDoItem({ todo, completed, id }) {
 
     const deleteItem = () => {
         console.log("In deleteItem function.");
-        dispatch(deleteAction(id));
+        //dispatch(deleteAction(id));
     }
 
     const markAsComplete = () => {
