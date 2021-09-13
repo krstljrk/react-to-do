@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/toDoItem.css'
+import '../css/style-file.scss'
 import { useDispatch } from 'react-redux';
 
 
