@@ -1,0 +1,65 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+// Add To Do style:
+
+.add__container {
+    position: relative;
+    text-align: center;
+    max-width: 80%;
+    margin: 20px 10% 50px 10%;
+    padding: 20px 0 20px 0;
+  }
+ 
+  .inputSection {
+    position: relative;
+    display: inline-table;
+    margin: auto;
+  }
+
+  .todoInput {
+    text-align: center;
+    min-width: 30em;
+    padding: 5px 0 5px 0;
+    border-radius: 0%;
+  }
+  
+  .inputElem {
+    padding: 0 0 10px 0;
+  }
+  
+  .add-btn {
+    min-width: 8em;
+    height: 3em;
+    border-radius: 15%;
+  }
+
+
+// To Do Item Style:
+.todoItem {
+    background-color: #A66784;
+    position: relative;
+    display: inline-block;
+    border: 2px solid black;
+    padding: 20px 80px 20px 20px;
+    margin: 50px 20px 50px 10%;
+    list-style-type: none; 
+    max-width: fit-content;
+  }
+  
+  .todoItem p {
+    font-size: larger;
+  }
+  
+  .todoItem--done {
+    text-decoration: line-through;
+  }
+  
+  .todoItem__btns {
+    position: relative;
+  }
+  
+  .todoItem__btns button {
+    position: relative;
+    float: right;
+    margin: 0 5px 0 0;
+  }
