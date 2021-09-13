@@ -33,7 +33,7 @@ function AddNewTodo() {
 
 
     return (
-        <div className="inputSection">
+        <div className="inputSection container-fluid">
             <h2>Enter new task:</h2>
             <div className="inputElem">
                 <input
@@ -45,7 +45,7 @@ function AddNewTodo() {
             </div>
             <div className="inputElem">
                 {empty && <p>Please enter text to add a new task.</p>}
-                <button className="add-btn"
+                <button className="btn btn-success"
                     onClick={addTodo}
                     type="submit">
                     ADD

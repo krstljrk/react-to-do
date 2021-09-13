@@ -22,10 +22,10 @@ function ToDoItem({ todo, completed, id }) {
             </div>
             
             <div className="todoItem__btns">
-                <button onClick={console.log("clicking edit")}>EDIT</button>
-                <button onClick={console.log("clicking done")}>DONE</button>
+                <button className="btn btn-info" onClick={console.log("clicking edit")}>EDIT</button>
+                <button className="btn btn-success" onClick={console.log("clicking done")}>DONE</button>
                 <button
-                    className="delete-btn"
+                    className="btn btn-danger"
                     onClick={deleteItem}
                     type="submit">DELETE</button>
             </div>
