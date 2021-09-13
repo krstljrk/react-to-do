@@ -1,7 +1,6 @@
 import React from 'react'
 import '../css/toDoItem.css'
 import { useDispatch } from 'react-redux';
-import { deleteAction } from '../features/deleteSlice';
 
 
 function ToDoItem({ todo, completed, id }) {

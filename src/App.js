@@ -2,14 +2,13 @@ import './App.css';
 import AddNewTodo from './components/addNewTodo';
 import ToDoItem from './components/ToDoItem';
 import { useSelector } from 'react-redux';
-import { currentState } from './features/todoSlice';
 
 
 function App() {
   const todos = useSelector((state) => state.todos);
 
   return (
-    <div className="app">
+    <div className="app container-fluid">
         <div className="add__container">
           <AddNewTodo />
         </div>
