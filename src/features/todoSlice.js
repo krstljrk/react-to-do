@@ -4,13 +4,15 @@ const initialState = {
     todoList: []
 }
 
-export const todoSlice = createSlice({
+const todoSlice = createSlice({
     name: "todos",
-    initialState: [
-        {id: 0, todo: "First Todo", completed: false},
-        {id: 1, todo: "Second Todo", completed: false},
-        {id: 2, todo: "Third Todo", completed: false}
-    ],
+    initialState: {
+        todoList: [
+            { id: 0, todo: "First Todo", completed: false },
+            { id: 1, todo: "Second Todo", completed: false },
+            { id: 2, todo: "Third Todo", completed: false }
+        ]
+    },
     reducers: {
         add: (state, action) => {
             const newTodo = {
@@ -21,13 +23,13 @@ export const todoSlice = createSlice({
             state.push(newTodo);
             //state.value.push(action.payload);
         },
-        delete: (state, action) => {
+        remove: (state, action) => {
             const newState = state.todoList.filter(todo => todo.id != action.payload);
             state.todoList = newState;
-        }
+        },
     }
 });
 
-export const { add, delete } = todoSlice.actions;
+export const { add, remove } = todoSlice.actions;
 
 export default todoSlice.reducer;

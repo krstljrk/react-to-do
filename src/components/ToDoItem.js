@@ -34,4 +34,4 @@ function ToDoItem({ todo, completed, id }) {
     )
 }
 
-export default ToDoItem
+export default ToDoItem;
