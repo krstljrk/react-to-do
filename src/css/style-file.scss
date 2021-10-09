@@ -2,6 +2,19 @@
 
 // Add To Do style:
 
+body {
+  background-color: beige;
+}
+
+.app {
+  border: 2px solid black;
+  border-radius: 5%;
+  background-color: #A67567;
+  margin: 5em auto 0 auto;
+  max-width: 70vw;
+  min-height: 80vh;
+}
+
 .add__container {
     position: relative;
     text-align: center;
@@ -34,6 +47,13 @@
   }
 
 
+.todo__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 // To Do Item Style:
 .todoItem {
     background-color: #A66784;
@@ -41,9 +61,10 @@
     display: inline-block;
     border: 2px solid black;
     padding: 20px 80px 20px 20px;
-    margin: 50px 20px 50px 10%;
+    margin: 50px 0 50px 25px;
     list-style-type: none; 
-    max-width: fit-content;
+    height: fit-content;
+    max-width: 500px;
   }
   
   .todoItem p {
@@ -62,4 +83,11 @@
     position: relative;
     float: right;
     margin: 0 5px 0 0;
+  }
+
+
+  .footer {
+    position: relative;
+    top: 20px;
+    text-align: center;
   }

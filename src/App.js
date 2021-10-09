@@ -1,4 +1,4 @@
-import './App.css';
+import './css/style-file.scss';
 import AddNewTodo from './components/addNewTodo';
 import ToDoItem from './components/ToDoItem';
 import { useSelector } from 'react-redux';
@@ -8,7 +8,8 @@ function App() {
   const todos = useSelector((state) => state.todos);
 
   return (
-    <div className="app container-fluid">
+    <div>
+      <div className="app container-fluid">
         <div className="add__container">
           <AddNewTodo />
         </div>
@@ -18,18 +19,20 @@ function App() {
             todos.map(item => {
               console.log(item)
               return (
-                <ToDoItem 
-              todo={item.todo}
-              completed={item.completed}
-              id={item.id} />
+                <ToDoItem
+                  todo={item.todo}
+                  completed={item.completed}
+                  id={item.id} />
               )
-              
-            }  
-          )
-          }
 
+            }
+            )
+          }
         </div>
+      </div>
+      <p className="footer">App created by Kristel Juurik</p>
     </div>
+
   );
 }
 
