@@ -7,7 +7,9 @@ const initialState = {
 export const todoSlice = createSlice({
     name: "todos",
     initialState: [
-        {id: 0, todo: "First Todo", completed: false}
+        {id: 0, todo: "First Todo", completed: false},
+        {id: 1, todo: "Second Todo", completed: false},
+        {id: 2, todo: "Third Todo", completed: false}
     ],
     reducers: {
         add: (state, action) => {
@@ -19,9 +21,13 @@ export const todoSlice = createSlice({
             state.push(newTodo);
             //state.value.push(action.payload);
         },
+        delete: (state, action) => {
+            const newState = state.todoList.filter(todo => todo.id != action.payload);
+            state.todoList = newState;
+        }
     }
 });
 
-export const { add } = todoSlice.actions;
+export const { add, delete } = todoSlice.actions;
 
 export default todoSlice.reducer;
