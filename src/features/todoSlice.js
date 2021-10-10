@@ -20,7 +20,7 @@ const todoSlice = createSlice({
                 todo: action.payload,
                 completed: false
             }
-            state.push(newTodo);
+            state.todoList.push(newTodo);
             //state.value.push(action.payload);
         },
         remove: (state, action) => {

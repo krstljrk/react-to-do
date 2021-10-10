@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/style-file.scss'
 import { useDispatch } from 'react-redux';
+import { remove } from '../features/todoSlice'
 
 
 function ToDoItem({ todo, completed, id }) {
@@ -8,7 +9,7 @@ function ToDoItem({ todo, completed, id }) {
 
     const deleteItem = () => {
         console.log("In deleteItem function.");
-        //dispatch(deleteAction(id));
+        dispatch(remove(id));
     }
 
     const markAsComplete = () => {

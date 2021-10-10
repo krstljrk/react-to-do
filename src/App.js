@@ -16,7 +16,7 @@ function App() {
 
         <div className="todo__container">
           {
-            todos.map(item => {
+            todos.todoList.map(item => {
               console.log(item)
               return (
                 <ToDoItem
