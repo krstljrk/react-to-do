@@ -1,15 +1,18 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
 // Add To Do style:
+$app-background: #6a89cc;
+$todo-color: #4a69bd;
 
 body {
   background-color: beige;
 }
 
 .app {
-  border: 2px solid black;
-  border-radius: 5%;
-  background-color: #A67567;
+  border: 1px solid $todo-color;
+  border-radius: 2%;
+  box-shadow: 4px 4px 8px black;
+  background-color: $app-background;
   margin: 5em auto 0 auto;
   max-width: 70vw;
   min-height: 80vh;
@@ -56,10 +59,11 @@ body {
 }
 // To Do Item Style:
 .todoItem {
-    background-color: #A66784;
+    background-color: $todo-color;
     position: relative;
     display: inline-block;
     border: 2px solid black;
+    box-shadow: 4px 2px 8px black;
     padding: 20px 80px 20px 20px;
     margin: 50px 0 50px 25px;
     list-style-type: none; 
