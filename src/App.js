@@ -14,9 +14,9 @@ function App() {
           <AddNewTodo />
         </div>
         <div className="filter__container">
-          <button className="btn btn-default">All</button>
-          <button className="btn btn-default">To Do</button>
-          <button className="btn btn-default">Completed</button>
+          <button className="btn">All</button>
+          <button className="btn">To Do</button>
+          <button className="btn">Completed</button>
         </div>
 
         <div className="todo__container">

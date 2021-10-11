@@ -3,6 +3,7 @@
 // Add To Do style:
 $app-background: #6a89cc;
 $todo-color: #4a69bd;
+$filter-btns: #b8e994;
 
 body {
   background-color: beige;
@@ -21,7 +22,7 @@ body {
     position: relative;
     text-align: center;
     max-width: 80%;
-    margin: 20px 10% 50px 10%;
+    margin: 20px 10% 10px 10%;
     padding: 20px 0 20px 0;
 
     .inputSection {
@@ -45,6 +46,19 @@ body {
           border-radius: 15%;
         }
       }
+    }
+  }
+
+  .filter__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: auto;
+
+    button {
+      width: 100px;
+      background-color: $filter-btns;
     }
   }
 
