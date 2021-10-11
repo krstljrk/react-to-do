@@ -16,82 +16,72 @@ body {
   margin: 5em auto 0 auto;
   max-width: 70vw;
   min-height: 80vh;
-}
 
-.add__container {
+  .add__container {
     position: relative;
     text-align: center;
     max-width: 80%;
     margin: 20px 10% 50px 10%;
     padding: 20px 0 20px 0;
-  }
- 
-  .inputSection {
-    position: relative;
-    display: inline-table;
-    margin: auto;
+
+    .inputSection {
+      position: relative;
+      display: inline-table;
+      margin: auto;
+
+      .inputElem {
+        padding: 0 0 10px 0;
+
+        .todoInput {
+          text-align: center;
+          min-width: 30em;
+          padding: 5px 0 5px 0;
+          border-radius: 0%;
+        }
+
+        .add-btn {
+          min-width: 8em;
+          height: 3em;
+          border-radius: 15%;
+        }
+      }
+    }
   }
 
-  .todoInput {
-    text-align: center;
-    min-width: 30em;
-    padding: 5px 0 5px 0;
-    border-radius: 0%;
-  }
-  
-  .inputElem {
-    padding: 0 0 10px 0;
-  }
-  
-  .add-btn {
-    min-width: 8em;
-    height: 3em;
-    border-radius: 15%;
-  }
+  .todo__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 
+    .todoItem {
+      background-color: $todo-color;
+      position: relative;
+      display: inline-block;
+      border: 2px solid black;
+      box-shadow: 4px 2px 8px black;
+      padding: 20px 80px 20px 20px;
+      margin: 50px 0 50px 25px;
+      list-style-type: none; 
+      height: fit-content;
+      max-width: 500px;
 
-.todo__container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+      p {
+        font-size: larger;
+      }
+
+      .todoItem__btns button {
+        position: relative;
+        float: right;
+        margin: 0 5px 0 0;
+      }
+    }
+  }
 }
-// To Do Item Style:
-.todoItem {
-    background-color: $todo-color;
-    position: relative;
-    display: inline-block;
-    border: 2px solid black;
-    box-shadow: 4px 2px 8px black;
-    padding: 20px 80px 20px 20px;
-    margin: 50px 0 50px 25px;
-    list-style-type: none; 
-    height: fit-content;
-    max-width: 500px;
-  }
-  
-  .todoItem p {
-    font-size: larger;
-  }
-  
-  .todoItem--done {
-    text-decoration: line-through;
-  }
-  
-  .todoItem__btns {
-    position: relative;
-  }
-  
-  .todoItem__btns button {
-    position: relative;
-    float: right;
-    margin: 0 5px 0 0;
-  }
 
-
-  .footer {
-    position: relative;
-    top: 20px;
-    text-align: center;
-  }
+.footer {
+  position: relative;
+  top: 20px;
+  text-align: center;
+}

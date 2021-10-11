@@ -13,6 +13,11 @@ function App() {
         <div className="add__container">
           <AddNewTodo />
         </div>
+        <div className="filter__container">
+          <button className="btn btn-default">All</button>
+          <button className="btn btn-default">To Do</button>
+          <button className="btn btn-default">Completed</button>
+        </div>
 
         <div className="todo__container">
           {
